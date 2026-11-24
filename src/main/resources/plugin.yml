@@ -1,0 +1,20 @@
+name: ChaosTranslator
+version: 1.0.0
+main: ua.chaossmp.translator.ChaosTranslator
+api-version: '1.21'
+authors: [ChaosSMP]
+description: Real-time async chat translator supporting all Minecraft languages.
+
+commands:
+  lang:
+    description: Выбрать язык перевода чата (auto, off или код языка)
+    usage: /lang <auto|off|код_языка>
+    aliases: [language, translate, язык, мова]
+
+permissions:
+  chaostranslator.use:
+    description: Позволяет использовать команду /lang
+    default: true
+  chaostranslator.admin:
+    description: Позволяет перезагружать конфиг /lang reload
+    default: op
