@@ -1,0 +1,25 @@
+# Формат отображения переведённого сообщения в чате (MiniMessage)
+# Плейсхолдеры: <player>, <message>, <source>, <target>
+chat-format: "<yellow>▪ <white><player> <gold>» <gray><message> <dark_gray>[<source>→<target>]"
+
+# Текст при наведении курсора на переведённое сообщение
+hover-format: "<gold>Оригинал <dark_gray>(<source>)<gold>:\n<white><original>"
+
+# Минимальная длина сообщения для перевода (чтобы не переводить "ок", "gg", "+")
+min-message-length: 3
+
+# Время жизни кэша переводов в секундах (по умолчанию 10 минут)
+cache-ttl-seconds: 600
+
+# Настройки сообщений плагина
+messages:
+  prefix: "<bold><red>CHAOS<gold>SMP</bold> <dark_gray>| "
+  no-permission: "<red>У вас недостаточно прав для выполнения этой команды."
+  player-only: "<red>Эта команда доступна только игрокам."
+  reloaded: "<green>Конфигурация переводчика успешно перезагружена!"
+  usage: "<yellow>Использование: <gold>/lang <auto|off|код_языка> <gray>(например: uk, ru, en, pl, de)"
+  set-auto: "<green>Включён автовыбор языка из настроек вашего клиента <gray>(текущий: <gold><lang><gray>)<green>."
+  set-off: "<yellow>Автоперевод чата отключён. Вы видите только оригинальные сообщения."
+  set-custom: "<green>Язык перевода чата установлен на: <gold><lang>"
+  invalid-lang: "<red>Некорректный код языка! Используйте <gold>auto<red>, <gold>off <red>или код языка <gray>(uk, ru, en, de...)"
+  locale-changed: "<gray>Язык чата автоматически обновлён под ваш клиент: <gold><lang>"
